@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-#include "func.h"
+#include "../globalFunctions/func.h"
 
 #define WORD_LENGTH 50
 
