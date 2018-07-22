@@ -15,6 +15,7 @@ int main()
 
     if(isValidWord(userInput))
     {
+        convertToLower(userInput);
         reverseString(userInput, inputReversed);
 	    printf("The string you entered backwards is: %s\n", inputReversed);
 	}

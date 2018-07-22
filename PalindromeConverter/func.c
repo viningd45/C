@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include <ctype.h>
 #include "func.h"
 
 int stringLength(char * input)
@@ -42,4 +43,12 @@ int isValidWord(char * word)
         } else return 0;
     }
     return 1;
+}
+
+void convertToLower(char * word)
+{
+    for(int i = 0; i < stringLength(word); i++)
+    {
+        word[i] = tolower(word[i]);
+    }
 }
