@@ -37,7 +37,7 @@ int isValidWord(char * word)
 {
     for(int i = 0; i < stringLength(word); i++)
     {
-        if((word[i] >= 'a' && word[i] <= 'z') || (word[i] >= 'A' && word[i] <= 'Z') or word[i] = ' ')
+        if((word[i] >= 'a' && word[i] <= 'z') || (word[i] >= 'A' && word[i] <= 'Z') || word[i] == ' ')
         {
             continue;
         } else return 0;
