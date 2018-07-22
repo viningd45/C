@@ -52,3 +52,21 @@ void convertToLower(char * word)
         word[i] = tolower(word[i]);
     }
 }
+
+int isPalindrome(char * word)
+{
+    convertToLower(word);
+    char reversed[stringLength(word)];
+
+    reverseString(word, reversed);
+
+    for(int i = 0; i < stringLength(word); i++)
+    {
+        if(word[i] == reversed[i])
+        {
+            continue;
+        } else return 0;
+    }
+
+    return 1;
+}
