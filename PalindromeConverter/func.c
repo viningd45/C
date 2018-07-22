@@ -21,3 +21,13 @@ int stringLength(char * input)
 	    return i;
     }
 }
+
+void reverseString(char * string, char * reversedString)
+{
+    int j = 0;
+    for(int i = stringLength(string) - 1; i >= 0; i--)
+    {
+        reversedString[j] = string[i];
+        j++;
+    }
+}
